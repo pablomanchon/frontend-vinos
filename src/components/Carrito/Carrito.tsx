@@ -52,7 +52,10 @@ export const Carrito = () => {
           <div className='carrito-footer'>
             <h3 className='total'>Total: ${useCart.calcularTotal()}</h3>
             <button
-              onClick={() => navigate("/metodos-pago")}
+              onClick={() => {
+                navigate("/metodos-pago");
+                setisClose(true);
+              }}
               className='btn-comprar'
             >
               Comprar
