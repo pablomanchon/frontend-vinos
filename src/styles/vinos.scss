@@ -1,0 +1,73 @@
+.vinos {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding: 1rem 0;
+  gap: 1rem;
+}
+
+.vino {
+  position: relative;
+  overflow: hidden;
+  background-color: beige;
+  border-radius: 1rem;
+  width: 12rem;
+  padding-top: 1rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  z-index: 1;
+  * {
+    z-index: 1;
+  }
+  .vino-img {
+    width: 9rem;
+    height: 30rem;
+  }
+  .uva-img {
+    position: absolute;
+    width: 50rem;
+    z-index: -1;
+    top: 0;
+  }
+  .caracteristicas {
+    color: white;
+    background-color: rgba(0, 0, 0, 0.463);
+    backdrop-filter: blur(3px);
+    width: 100%;
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 0;
+    h3 {
+      font-size: 2rem;
+      text-align: center;
+    }
+    .tipos-uva {
+      background-color: rgba(255, 255, 255, 0.177);
+      border-radius: 1rem;
+      padding: 1rem;
+      h3 {
+        font-size: 1.4rem;
+      }
+    }
+    .precio {
+      color: rgb(58, 253, 58);
+      font-size: 2.5rem;
+    }
+    .btn-agregar {
+      cursor: pointer;
+      border: none;
+      color: white;
+      width: 100%;
+      background-color: green;
+      border-radius: 1rem;
+      padding: 1rem 0;
+      font-size: 1.2rem;
+      font-weight: 600;
+    }
+  }
+}

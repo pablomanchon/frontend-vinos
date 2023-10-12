@@ -1,0 +1,37 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+body {
+  background-color: #9f9e9e;
+  width: 100%;
+  height: 100vh;
+}
+#root {
+  height: 100%;
+  main {
+    height: 100%;
+    background-image: url("https://c.wallhere.com/photos/88/9a/2560x1600_px_Dark_drink_food_grapes_Wine-552895.jpg!d");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    overflow-y: auto;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+}
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background: #620000;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #888;
+  border-radius: 2rem;
+}
