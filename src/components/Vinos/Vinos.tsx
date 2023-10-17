@@ -15,10 +15,12 @@ export const Vinos = () => {
   }, [vinosData2]);
 
   return (
-    <div className='vinos'>
-      {results?.map((vino) => (
-        <Card key={vino.id} vino={vino} />
-      ))}
+    <div className='container'>
+      <div className='vinos'>
+        {results?.map((vino) => (
+          <Card key={vino.id} vino={vino} />
+        ))}
+      </div>
     </div>
   );
 };
