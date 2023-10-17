@@ -9,7 +9,7 @@ export const Comprar = () => {
     <div className='comprar'>
       <h3 className='title'>Detalle de la compra</h3>
       <div className='detalle-compra'>
-        {carrito.map((producto) => (
+        {carrito?.map((producto) => (
           <div key={producto.id} className='producto'>
             <div className='caracteristicas'>
               <h3 className='nombre'>
@@ -26,7 +26,7 @@ export const Comprar = () => {
           </div>
         ))}
         <h3 className='total'>
-          Total: <span>${calcularTotal()}</span>
+          Total: <span>${calcularTotal() || 0}</span>
         </h3>
       </div>
       <div className='metodos-pago'>

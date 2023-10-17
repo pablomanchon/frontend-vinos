@@ -16,7 +16,7 @@ export const MercadoPagoBtn = () => {
     setLoading(true);
     api
       .post(
-        "https://backend-vinos.onrender.com/mercado-pago/crear-preferencia",
+        "https://backend-vinos-production.up.railway.app/mercado-pago/crear-preferencia",
         { total }
       )
       .then((res) => {
