@@ -16,7 +16,7 @@ export const SearchProvider = ({ children }: props) => {
   const [results, setResults] = useState<Vino[]>([]);
 
   const handleSearch = (frase: string) => {
-    const localStorageValue = localStorage.getItem("vinos");
+    const localStorageValue = localStorage.getItem("vinosVelasco");
     const vinosValue: Vino[] = localStorageValue
       ? JSON.parse(localStorageValue)
       : [];
