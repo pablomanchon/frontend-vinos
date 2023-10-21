@@ -9,7 +9,7 @@ export const Vinos = () => {
   const { results, handleSearch } = useContext(SearchContext);
   useEffect(() => {
     vinosData2.then((res) => {
-      localStorage.setItem("vinos", JSON.stringify(res));
+      localStorage.setItem("vinosWeWines", JSON.stringify(res));
       handleSearch("");
     });
   }, [vinosData2]);

@@ -6,10 +6,8 @@ const api = axios.create({
 });
 
 export const getVinos = async (): Promise<Vino[]> => {
-  const response = await api.get("/vinos").catch((err) => {
-    console.log(err);
-  });
-  return response?.data;
+  const response = await api.get("/vinos");
+  return response.data;
 };
 
 export default api;
